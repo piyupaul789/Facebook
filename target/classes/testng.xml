@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" name= Suite" parallel="tests" verbose="1">
+
+<!-- Start First Test -->
+  <test name="Facebook login chrome" parallel="methods" thread-count="1">
+	  <parameter name="Browser" value="chrome"/>
+	  
+	  <classes>
+	    <class name="com.mytest.LoginTest"/>
+	  </classes>
+  </test> <!-- Test -->	
+  
+  <test name="Facebook login chrome" parallel="methods" thread-count="1">    
+  	<parameter name="Browser" value="ff"/>
+    <classes>
+       <class name="com.mytest.LoginTest"/>
+    </classes>
+    
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
